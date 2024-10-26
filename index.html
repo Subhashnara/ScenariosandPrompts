@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Scenario Study</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .scenario-select {
+            margin-bottom: 20px;
+        }
+        .scenario-content {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cybersecurity Scenario Study</h1>
+        
+        <div class="scenario-select">
+            <h2>Choose a scenario:</h2>
+            <button onclick="showScenario('malware')">Malware Infection</button>
+            <button onclick="showScenario('smartphone')">Smartphone Loss or Theft</button>
+            <button onclick="showScenario('social')">Social Media Hacked</button>
+            <button onclick="showScenario('usb')">USB Drive Malware</button>
+        </div>
+
+        <div id="malware" class="scenario-content">
+            <h2>Malware Infection</h2>
+            <p>You download a free game or a software tool from the internet, but soon after installing it, your computer starts running slowly. Strange pop-up ads appear, and your web browser redirects you to random websites. This is likely caused by malware, a harmful software that can spy on you, steal your data, or damage your computer. Malware often hides in files you download from unofficial or unsafe websites. It can even track your keystrokes, steal passwords, or access your personal files without your knowledge. Sometimes, malware can turn your device into part of a "botnet"—a network of computers used to launch cyberattacks. Protect yourself by downloading software only from trusted sources, using security software, and avoiding clicking on suspicious links or ads.</p>
+            <h3>What happens:</h3>
+            <ul>
+                <li>The malware starts spying on your activities and stealing sensitive information like passwords.</li>
+                <li>It may install additional harmful programs or create backdoors for further attacks.</li>
+                <li>Your computer might become part of a larger botnet, contributing to cyberattacks without your knowledge.</li>
+                <li>Personal data, such as financial information, could be at risk of being stolen.</li>
+            </ul>
+            <h3>Goals:</h3>
+            <ol>
+                <li>Identify the type of malware. <br>Determine what kind of malware has infected your system.</li>
+                <li>Assess the immediate risks. <br>Now, figure out the immediate dangers this malware might cause.</li>
+                <li>Learn mitigation steps. <br>Once you've identified the risks, find the necessary steps to remove or neutralize the malware.</li>
+            </ol>
+            <h3>Prompts:</h3>
+            <p>The following prompts are ready-to-use prompts. The content in [] is replaceable, If you decide on certain thing which can be replaced. Please do.</p>
+            <ul>
+                <li>Are there any variations of [Malware] that are becoming more common/frequent?</li>
+                <li>What are the signs of a system getting corrupted by [Malware]?</li>
+                <li>What are the potential consequences of a successful [Malware] attack on one’s systems or data?</li>
+                <li>Define a checklist which helps a user for checking their device against [Malware].</li>
+                <li>Which vulnerabilities exist in a system, making them susceptible to [Malware]? (CAN BE USED AFTER ANALYSING LOGS)</li>
+                <li>What specific threats can be effectively mitigated by someone proficient in [Malware Analysis]?</li>
+                <li>Are there certifications specifically designed to address and mitigate [Malware]?</li>
+                <li>Which certifications demonstrate strong knowledge for combating [Malware]?</li>
+                <li>What are the immediate steps to take if we suspect a [Malware] is in progress?</li>
+                <li>What incident response procedures should be initiated if we detect signs of a potential [Malware]?</li>
+                <li>If successful, which threat would have the most severe impact?</li>
+                <li>What are the immediate risks if [vulnerability] exploited by [Malware] is compromised?</li>
+                <li>Are there high effects, where [vulnerability] exploited by [Malware] being exploited leads to the compromise of other systems?</li>
+                <li>What forensic tools or techniques could help us trace [Malware] back to the initial point of entry?</li>
+                <li>Can analyzing our incident logs help identify indicators of past attempts to exploit our systems using [Malware]?</li>
+                <li>Are there any industry-recognized training programs or certifications that would build a team's skills in defending against [Malware]?</li>
+                <li>What skills would be most valuable in developing effective mitigations against [Malware]?</li>
+                <li>In a crisis, which [threats related to Malware] could someone with [skills] help to mitigate?</li>
+            </ul>            
+        </div>
+
+        <div id="smartphone" class="scenario-content">
+            <h2>Smartphone Loss or Theft</h2>
+            <p>You lose your smartphone, or it gets stolen. Along with losing the device itself, all the sensitive information stored on it is at risk. This includes contacts, emails, photos, and even access to your banking apps. If your phone isn't protected by a password or biometric lock, the thief can easily access your private data. Worse yet, if you haven’t set up features like remote wiping, they could steal sensitive financial or personal information. To safeguard yourself, always enable a strong password or fingerprint lock on your phone, enable remote tracking and wiping, and regularly back up your data. This way, if your phone is lost or stolen, you can minimize the damage.</p>
+            <h3>What happens:</h3>
+            <ul>
+                <li>Without a strong password or biometric lock, the thief can easily access your personal data.</li>
+                <li>They could gain access to your bank account and perform unauthorized transactions.</li>
+                <li>Sensitive information like contacts, emails, and even your location history is at risk.</li>
+                <li>If the phone is not wiped remotely, the thief could impersonate you and exploit your online identity.</li>
+            </ul>
+            <h3>Goals:</h3>
+            <ol>
+                <li><strong>Understand data exposure:</strong> Identify what sensitive information could be exposed on the lost or stolen smartphone.</li>
+                <li><strong>Learn remote security actions:</strong> Explore what actions you can take remotely to protect your data.</li>
+                <li><strong>Plan for future prevention:</strong> Think about steps to prevent this from happening again.</li>
+            </ol>
+            <h3>Prompts:</h3>
+            <p>The following prompts are ready-to-use prompts. The content in [] is replaceable, If you decide on certain thing which can be replaced. Please do.</p>
+            <ul>
+                <li>What are the immediate risks if vulnerabilities associated with data exposure are compromised in device theft?</li>
+                <li>Which vulnerabilities exist in our systems, making them susceptible to [Data exposure due to device theft]? (CAN BE USED AFTER ANALYSING LOGS)</li>
+                <li>Which vulnerabilities pose the greatest risk if exploited in a [Data exposure due to device theft]?</li>
+                <li>For long-term protection, what vulnerabilities should someone with [skills related to mobile security] prioritize?</li>
+                <li>Could [skills related to mobile security] be used to develop better defenses against exploits targeting [vulnerability that could lead to data exposure]?</li>
+                <li>What proactive measures can we implement to mitigate the risk of [Device Theft]?</li>
+                <li>What are the immediate steps to take if we suspect a [Device Theft] is in progress?</li>
+                <li>What logging and monitoring strategies can be implemented to detect early signs of [Device Theft] attacks and trace their origins?</li>
+                <li>Are there highly effective compensating controls we could implement more quickly than patching [vulnerabilities that could lead to data exposure due to device theft]?</li>
+                <li>Does [Mobile Security Analyst] need specialized tools or access to systems to conduct the investigation effectively?</li>
+                <li>Are there any emerging trends or new techniques being used by threat actors in the [Device Theft] landscape?</li>
+                <li>Who needs to be notified immediately, both internally and potentially externally?</li>
+                <li>What skills would be most valuable in developing effective mitigations against [Device Theft]?</li>
+                <li>In a crisis, which [threats related to device theft, like data breaches or identity theft] could someone with [relevant security skills] help to mitigate?</li>
+                <li>Are there certifications specifically designed to address and mitigate [Device Theft]?</li>
+            </ul>            
+        </div>
+
+        <div id="social" class="scenario-content">
+            <h2>Social Media Got Hacked</h2>
+            <p>You use the same password for multiple online accounts—your email, social media, and banking—for convenience. One day, you hear that one of the accounts you use has been breached, and hackers now have your email and password. Because you reused the same password, the hackers can now try logging into your other accounts and gain access. This is a password reuse vulnerability. To protect yourself, avoid using the same password across multiple accounts, and always create strong, unique passwords for each one. Using a password manager can help you keep track of different passwords. Enabling two-factor authentication adds an extra layer of protection.</p>
+            <h3>What happens:</h3>
+            <ul>
+                <li>The hackers attempt to log into your other accounts using the same email and password.</li>
+                <li>They might gain access to your email, financial services, or social media profiles.</li>
+                <li>They could perform unauthorized transactions, send phishing emails, or steal your data.</li>
+                <li>If you don't act quickly to change your passwords, your online security could be at risk.</li>
+            </ul>
+            <h3>Goals:</h3>
+            <ol>
+                <li><strong>Recognize the vulnerability:</strong> Begin by identifying how your account was hacked.</li>
+                <li><strong>Secure compromised accounts:</strong> Once you've understood how the breach happened, your next step is to secure your social media account.</li>
+                <li><strong>Explore password management:</strong> Learn about effective password management techniques.</li>
+            </ol>
+            <h3>Prompts:</h3>
+            <p>The following prompts are ready-to-use prompts. The content in [] is replaceable, If you decide on certain thing which can be replaced. Please do.</p>
+            <ul>
+                <li>What proactive measures can we implement to mitigate the risk of [Account Hijacking]?</li>
+                <li>Are there any emerging trends or new techniques being used by threat actors in the [Account Hijacking] landscape?</li>
+                <li>Which [Account Hijacking] attacks pose the greatest risk to our critical assets and business operations? (DEFINE OUR)</li>
+                <li>What are the recommended priorities for patching [vulnerabilities related to account security] or focus on other risk reduction measures?</li>
+                <li>Could analyzing one’s own incident logs reveal past attempts to exploit [vulnerabilities related to account security]?</li>
+                <li>What incident response procedures should be initiated if we detect signs of a potential [Account Hijacking]?</li>
+                <li>What forensic tools or techniques could help us trace [Account Hijacking] back to the initial point of entry?</li>
+                <li>Are there highly effective compensating controls we could implement more quickly than patching [vulnerabilities related to account security]?</li>
+                <li>Does [Security Analyst] need specialized tools or access to systems to conduct the investigation effectively?</li>
+                <li>What are the current escalation procedures if [Security Analyst] encounters obstacles during remediation?</li>
+                <li>What specific threats can be effectively mitigated by someone proficient in [password management]?</li>
+                <li>Are there certifications specifically designed to address and mitigate [Account Hijacking]?</li>
+                <li>Are there any industry-recognized training programs or certifications that would build a team's skills in defending against [Account Hijacking]?</li>
+                <li>What skills would be most valuable in developing effective mitigations against [Account Hijacking]?</li>
+                <li>In a crisis, which [threats related to Account Hijacking] could someone with [password management skills] help to mitigate?</li>
+            </ul>            
+        </div>
+
+        <div id="usb" class="scenario-content">
+            <h2>USB Drive Malware Scenario</h2>
+            <p>You find a USB drive in the parking lot of your place and decide to plug it into your computer, hoping to return it to its owner. However, instead of finding useful information, your computer becomes infected with malware hidden on the USB drive. The malware may give hackers access to your company’s network, compromising sensitive data. This is a USB drive malware attack. Hackers often leave infected USB drives in public places, knowing someone will likely pick them up and use them. To avoid this, never plug unknown USB drives into your computer. Always use trusted sources for storage devices and ensure your system’s antivirus software is up to date.</p>
+            <h3>What happens:</h3>
+            <ul>
+                <li>The malware installs itself and might give hackers remote access to your computer.</li>
+                <li>Your network could be compromised, exposing sensitive business information.</li>
+                <li>The malware may spread across your workplace's systems, causing widespread damage.</li>
+                <li>You unknowingly contribute to a security breach, putting your employer and colleagues at risk.</li>
+            </ul>
+            <h3>Goals:</h3>
+            <ol>
+                <li><strong>Understand the attack vector:</strong> Figure out how the malware could have entered your system.</li>
+                <li><strong>Learn incident response:</strong> Focus on how to respond to this type of attack.</li>
+                <li><strong>Develop preventative measures:</strong> Consider what steps you can take to prevent similar incidents in the future.</li>
+            </ol>
+            <h3>Prompts:</h3>
+            <p>The following prompts are ready-to-use prompts. The content in [] is replaceable, If you decide on certain thing which can be replaced. Please do.</p>
+            <ul>
+                <li>Are there any variations of [USB Malware Infection] that are becoming more common/frequent?</li>
+                <li>What logging and monitoring strategies can be implemented to detect early signs of [USB Malware] attacks and trace their origins?</li>
+                <li>What are the immediate risks if [vulnerability] exploited by USB malware is compromised?</li>
+                <li>Could analyzing one’s own incident logs reveal past attempts to exploit [vulnerability exploited by USB malware]?</li>
+                <li>Are there high effects, where [vulnerability exploited by USB malware] being exploited leads to the compromise of other systems?</li>
+                <li>What are the immediate steps to take if we suspect a [USB Malware Infection] is in progress?</li>
+                <li>What are the potential consequences of a successful [USB Malware Infection] attack on our systems or data? (DEFINE OUR)</li>
+                <li>What skills would be most valuable in developing effective mitigations against [USB Malware Infection]?</li>
+                <li>In a crisis, which [threats related to USB Malware] could someone with [Incident Response skills] help to mitigate?</li>
+                <li>Does [Incident Response Team] need specialized tools or access to systems to conduct the investigation effectively?</li>
+                <li>If we could only invest in certifications for a few key employees, which certifications would have the biggest impact on our ability to handle [USB Malware Infection]? (COMPANY PERSPECTIVE)</li>
+                <li>Which certifications demonstrate strong knowledge for combating [vulnerability] exploited by [Malware]?</li>
+                <li>Are there any industry-recognized training programs or certifications that would build a team's skills in defending against [USB Malware]?</li>
+                <li>What specific threats can be effectively mitigated by someone proficient in [Secure USB handling practices]?</li>
+                <li>Are there certifications specifically designed to address and mitigate [USB Malware]?</li>
+            </ul>            
+        </div>
+    </div>
+
+    <script>
+        function showScenario(scenarioId) {
+            // Hide all scenarios
+            var scenarios = document.getElementsByClassName('scenario-content');
+            for (var i = 0; i < scenarios.length; i++) {
+                scenarios[i].style.display = 'none';
+            }
+            
+            // Show the selected scenario
+            document.getElementById(scenarioId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
